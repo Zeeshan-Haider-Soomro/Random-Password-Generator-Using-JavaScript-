@@ -1,3 +1,7 @@
+let date = new Date();
+let yearChanger = document.querySelector("#yearChanger");
+yearChanger.innerHTML = date.getFullYear();
+
 let passwordBox = document.getElementById("password");
 let length = 16;
 let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

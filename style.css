@@ -65,6 +65,15 @@ body{
 button:hover{
     background: linear-gradient(87deg, #ea7171, #17079f, #a3a123, #333, #693406);
 }
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+}
 
 
 
