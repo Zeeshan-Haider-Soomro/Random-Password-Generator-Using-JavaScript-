@@ -23,9 +23,16 @@ function createPassword(){
     }
     passwordBox.value = password
 }
+let copied = document.querySelector("#copied")
 
 function copyPassword(){
     passwordBox.select();
     document.execCommand("copy")
+    setTimeout(
+        function(){
+            passwordBox.value = "";
+            copied.innerText = "copied";
+        }, 1000
+    )
 }
 
