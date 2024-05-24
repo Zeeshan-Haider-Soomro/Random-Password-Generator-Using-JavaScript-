@@ -28,10 +28,11 @@ let copied = document.querySelector("#copied")
 function copyPassword(){
     passwordBox.select();
     document.execCommand("copy")
+    copied.innerText = "copied";
     setTimeout(
         function(){
             passwordBox.value = "";
-            copied.innerText = "copied";
+            copied.innerText = "";
         }, 1000
     )
 }
